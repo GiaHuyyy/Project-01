@@ -75,7 +75,6 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    /* padding-top: 38px; */
     padding: 12px 0px;
 }
 
@@ -98,6 +97,7 @@ a {
 .navbar ul a:hover {
     text-decoration: underline;
 }
+
 .navbar .action-link {
     font-weight: 500;
     font-size: 1.4rem;
@@ -312,7 +312,8 @@ a {
 }
 
 .featured .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 68px;
 }
@@ -486,7 +487,6 @@ a {
 
 .stats .sub-title::before {
     position: absolute;
-    left: 0;
     top: -10px;
     display: inline-block;
     content: "";
@@ -581,11 +581,8 @@ a {
 }
 
 .footer .row {
-    display: flex;
-}
-
-.footer .row-top {
-    gap: 185px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .footer .heading {
